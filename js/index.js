@@ -45,6 +45,14 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+const nav = document.querySelector('nav');
+//nav.style.backgroundColor = 'red';
+const Hello = document.createElement('a');
+Hello.textContent = 'Hello';
+nav.prepend(Hello);
+nav.append('Good Night');
+
+
 
 //Links
 let aLinks = document.querySelectorAll('a');
@@ -60,7 +68,7 @@ aLinks[2].style.color = 'green';
 aLinks[3].style.color = 'green';
 aLinks[4].style.color = 'green';
 aLinks[5].style.color = 'green';
-aLinks.appendChild('hello');
+
 
 // CTA Section
 const myH1 = document.querySelector('.cta h1');
