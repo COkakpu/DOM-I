@@ -41,17 +41,19 @@ const siteContent = {
   },
 };
 
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-const nav = document.querySelector('nav');
-//nav.style.backgroundColor = 'red';
-const Hello = document.createElement('a');
-Hello.textContent = 'Hello';
-nav.prepend(Hello);
-nav.append('Good Night');
-
+//Append Prepend
+let nav = document.querySelector('nav');
+let hello = document.createElement('a');
+let goodNight = document.createElement('a');
+hello.textContent = 'Hello';
+goodNight.textContent = 'Good Night';
+nav.append(goodNight);
+nav.prepend(hello);
 
 
 //Links
